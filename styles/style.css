@@ -1,0 +1,85 @@
+* {
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 718px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  height: 60px;
+  align-items: center;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  margin: 34px;
+  align-items: center;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  font-style: normal;
+}
+
+p {
+  color: #344563;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+a {
+  color: #505f79;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+h3 a:hover {
+  font-style: normal;
+  font-weight: 500;
+  color: #7f8cff;
+}
+
+.link-container,
+li,
+ul {
+  list-style: none;
+  display: inline;
+  padding: 1px;
+  margin-right: 20px;
+}
+
+.main-content {
+  background-image: url("../Assets/images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+  background-size: 375px, 668px;
+  width: 375px;
+  height: 718px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
