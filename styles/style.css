@@ -17,6 +17,7 @@ header {
   width: 375px;
   height: 60px;
   align-items: center;
+  margin: 0 0 0 -15px;
 }
 
 .menu-bar {
@@ -33,9 +34,10 @@ header {
   font-size: 12px;
   line-height: 20px;
   color: #6070ff;
+  margin-left: 25px;
 }
 
-h2 {
+h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -46,13 +48,14 @@ h2 {
 p {
   color: #344563;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
   font-size: 16px;
+  margin-top: 30px;
 }
 
 a {
-  color: #505f79;
+  color: #6070ff;
   text-decoration: none;
   line-height: 24px;
 }
@@ -69,7 +72,7 @@ ul {
   list-style: none;
   display: inline;
   padding: 1px;
-  margin-right: 20px;
+  margin: 3px 20px 0 -1px;
 }
 
 .main-content {
@@ -82,4 +85,17 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 30px 0 10px 0;
+}
+
+.sub-heading {
+  display: block;
+  font-style: normal;
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+span {
+  display: block;
 }
