@@ -2,28 +2,16 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> Portfolio Project.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+This project is been done to test my knowledge on Flexbox and semantic tags used in HTML by Building the header Section of a Mobile version portfio website where aligning of elements and the use of figma to replicant designs with code was very vital
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML,CSS,FLEXBOX,CSSGRID & JAVASCRIPT
+- Git & Github
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -35,25 +23,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-### Run tests
-
 ### Deployment
 
+## Author
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: (https://github.com/Geoelycom)
+- Twitter: (https://twitter.com/Ely_codes)
+- LinkedIn: (https://linkedin.com/in/ekenimohelyan)
 
 ## 🤝 Contributing
 
@@ -64,12 +40,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
