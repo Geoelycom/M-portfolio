@@ -11,11 +11,6 @@ This project is been done to test my knowledge on Flexbox and semantic tags used
 - HTML,CSS,FLEXBOX,CSSGRID & JAVASCRIPT
 - Git & Github
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -29,8 +24,6 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 ### Deployment
-
-
 
 ## Author
 
