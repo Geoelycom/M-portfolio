@@ -56,10 +56,37 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  font-style: normal;
+}
+
 a {
   color: #6070ff;
   text-decoration: none;
   line-height: 24px;
+}
+
+h2 a {
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+}
+
+h3 a {
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
 }
 
 h3 a:hover {
@@ -115,130 +142,105 @@ span {
   display: block;
 }
 
-/* --Work-section-- */
+.skills-pictures {
+  display: inline-block;
+}
+
+.work li {
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  color: #7a869a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.programnming-languages li {
+  display: inline;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6070ff;
+  border-radius: 8px;
+  background-color: #ebebff;
+  margin: 1px;
+  padding: 4px 12px;
+  position: relative;
+}
+
+.languages ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  float: right;
+  border: 0 solid #b2bdc9;
+  color: #acb7c3;
+}
+
+.frameworks.skills {
+  padding: 5px;
+}
+
+.greyback {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f7f7f9;
+  width: 100%;
+  gap: 50px;
+  margin: 5px 0;
+  height: 66.72px;
+}
+
+.lang {
+  pointer-events: none;
+}
+
+h2 a:hover {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  background-color: #6070ff;
+}
+
+h2 a:active {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #2230d2;
+  padding: 10px;
+  background-color: #2230d2;
+}
+
 .project-works {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
   margin: 0 auto;
-  background-color: #f7f7f9;
 }
 
-.work h1 a {
-  color: #396df2;
-  border: 2px solid #396df2;
-  border-radius: 8px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+.project-works ul {
+  padding-left: 1px;
 }
 
-.work h2 a:hover {
-  background-color: #6070ff;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.work h2 a:active {
-  background-color: #2230d2;
-  border: 2px solid #2230d2;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.work {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  width: 327px;
-  height: 540px;
-  border-radius: 16px;
-  margin: 44px 24px 44px 24px;
-}
-
-.work img {
-  margin: 1px 15px 1px 5px;
-}
-
-.work h2 {
-  font-weight: 700;
-  color: #172b4d;
-  width: 295px;
-  height: 36px;
-  margin: 1px 15px 1px 5px;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.work ul li {
-  font-weight: 600;
+.big-project p {
   color: #344563;
-  font-size: 13px;
-  display: inline;
-  height: 13px;
-  width: 279px;
-  padding: 1px 10px;
-}
-
-.work ul {
-  margin: 10px 1px;
-}
-
-.qualification {
-  list-style: circle;
-  color: #7a869a;
-}
-
-.skill {
-  list-style: circle;
-  color: #7a869a;
-}
-
-.work p {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  margin: 10px 10px;
-}
-
-.languages {
-  margin: 5px 1px 45px 1px !important;
-}
-
-.work .languages li {
+  font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  display: inline;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  margin-left: 10px;
-  margin-top: 1px;
-  position: relative;
+  line-height: 24px;
+  font-size: 16px;
+  margin-top: 30px;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  height: 1125px;
-  width: 375px;
-  margin: 0 auto;
+.programnming-languages {
+  margin: 5px 1px 0 1px;
 }
 
-.contact h2 {
-  height: 101px;
-  width: 327px;
-  margin: 114px 24px 5px 24px;
-}
-
-.contact p {
-  height: 144px;
-  width: 327px;
-  margin: 2px 24px 12px 24px;
+.canopy {
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
