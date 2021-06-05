@@ -1,6 +1,9 @@
+/* ---General styles--- */
 * {
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* --Main header Container */
 
 .container {
   display: flex;
@@ -11,6 +14,8 @@
   margin: 0 auto;
 }
 
+/* --Header--- */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +25,8 @@ header {
   margin: 0 0 0 -15px;
 }
 
+/* --Menu bar-- */
+
 .menu-bar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +34,8 @@ header {
   margin: 34px;
   align-items: center;
 }
+
+/* --Logo-- */
 
 .logo {
   font-style: normal;
@@ -37,21 +46,14 @@ header {
   margin-left: 25px;
 }
 
+/* ---h1 - h6--- */
+
 h1 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   font-style: normal;
-}
-
-p {
-  color: #344563;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  font-size: 16px;
-  margin-top: 30px;
 }
 
 a {
@@ -66,6 +68,17 @@ h3 a:hover {
   color: #7f8cff;
 }
 
+/* --Paragraphs-- */
+p {
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* --Link tags-- */
 .link-container,
 li,
 ul {
@@ -75,6 +88,7 @@ ul {
   margin: 3px 20px 0 -1px;
 }
 
+/* --Main-section-- */
 .main-content {
   background-image: url("../Assets/images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
@@ -88,6 +102,7 @@ ul {
   margin: 30px 0 10px 0;
 }
 
+/* --Bottom header section-- */
 .sub-heading {
   display: block;
   font-style: normal;
@@ -98,4 +113,132 @@ ul {
 
 span {
   display: block;
+}
+
+/* --Work-section-- */
+.project-works {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  margin: 0 auto;
+  background-color: #f7f7f9;
+}
+
+.work h1 a {
+  color: #396df2;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.work h2 a:hover {
+  background-color: #6070ff;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.work h2 a:active {
+  background-color: #2230d2;
+  border: 2px solid #2230d2;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.work {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 327px;
+  height: 540px;
+  border-radius: 16px;
+  margin: 44px 24px 44px 24px;
+}
+
+.work img {
+  margin: 1px 15px 1px 5px;
+}
+
+.work h2 {
+  font-weight: 700;
+  color: #172b4d;
+  width: 295px;
+  height: 36px;
+  margin: 1px 15px 1px 5px;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.work ul li {
+  font-weight: 600;
+  color: #344563;
+  font-size: 13px;
+  display: inline;
+  height: 13px;
+  width: 279px;
+  padding: 1px 10px;
+}
+
+.work ul {
+  margin: 10px 1px;
+}
+
+.qualification {
+  list-style: circle;
+  color: #7a869a;
+}
+
+.skill {
+  list-style: circle;
+  color: #7a869a;
+}
+
+.work p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 10px 10px;
+}
+
+.languages {
+  margin: 5px 1px 45px 1px !important;
+}
+
+.work .languages li {
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-left: 10px;
+  margin-top: 1px;
+  position: relative;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 1125px;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  height: 101px;
+  width: 327px;
+  margin: 114px 24px 5px 24px;
+}
+
+.contact p {
+  height: 144px;
+  width: 327px;
+  margin: 2px 24px 12px 24px;
 }
