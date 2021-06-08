@@ -261,7 +261,7 @@ button {
   background-repeat: no-repeat;
   background-size: 375px, 668px;
   width: 375px;
-  height: 792px;
+  height: 1000px;
   padding-left: 8px;
   display: flex;
   flex-direction: column;
@@ -290,7 +290,7 @@ button {
   font-weight: 700;
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
-  margin-top: 155px;
+  margin-top: 225px;
 }
 
 .contact-form p {
@@ -353,4 +353,10 @@ input {
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
   line-height: 20px;
   margin: 8px 0;
+}
+
+.bottom-line {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 5px;
 }
