@@ -319,7 +319,8 @@ button:active {
 }
 
 textarea {
-  width: 327px;
+  /* width: 327px; */
+  width: 100%;
   height: 170px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
@@ -336,7 +337,8 @@ fieldset {
 }
 
 input {
-  width: 327px;
+  /* width: 327px; */
+  width: 100%;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
