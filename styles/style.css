@@ -323,6 +323,7 @@ textarea {
   height: 170px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  padding: 15px 16px;
 }
 
 fieldset {
