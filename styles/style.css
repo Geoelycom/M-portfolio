@@ -339,4 +339,5 @@ input {
   height: 48px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  padding: 0 16px;
 }
