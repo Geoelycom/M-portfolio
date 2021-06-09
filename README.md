@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Project Name
-My portfolio project Portfolio .
+## My portfolio project Portfolio .
 
 This project is been done to test my knowledge on Flexbox and semantic tags used in HTML by Building the header Section of a Mobile version portfio website where aligning of elements and the use of figma to replicant designs with code was very vital
 
