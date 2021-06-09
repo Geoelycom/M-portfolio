@@ -11,16 +11,6 @@ This project is been done to test my knowledge on Flexbox and semantic tags used
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Deployment
-
 ## Author
 
 - GitHub: (https://github.com/Geoelycom)
