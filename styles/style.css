@@ -276,6 +276,7 @@ button {
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   line-height: 24px;
+  width: 140px;
 }
 
 .contact-form h2 {
@@ -290,7 +291,7 @@ button {
   font-weight: 700;
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
-  margin-top: 225px;
+  margin-top: 168px;
 }
 
 .contact-form p {
@@ -302,7 +303,7 @@ button {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  bottom: 55px;
+  bottom: 45px;
   position: relative;
   color: #fff;
 }
@@ -339,8 +340,8 @@ fieldset {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  margin-left: 9px;
   border: none;
+  margin-left: 9px;
 }
 
 input {
