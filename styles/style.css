@@ -244,3 +244,120 @@ h2 a:active {
   line-height: 16px;
   color: #344563;
 }
+
+button {
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  margin-top: 13px;
+}
+
+.contact-form {
+  background-image: url("../Assets/images/contact-section.png");
+  background-repeat: no-repeat;
+  background-size: 375px, 668px;
+  width: 375px;
+  height: 1000px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+  background-color: #6070ff;
+  border-top-left-radius: 4.5rem;
+}
+
+.contact-form button {
+  display: flex;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  width: 140px;
+}
+
+.contact-form h2 {
+  display: flex;
+  align-items: flex-start;
+  font-style: normal;
+  justify-content: center;
+  margin-right: 70px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  margin-top: 168px;
+}
+
+.contact-form p {
+  width: 372px;
+  height: 102px;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  bottom: 45px;
+  position: relative;
+  color: #fff;
+}
+
+button:hover {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  background-color: #6070ff;
+}
+
+button:active {
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #2230d2;
+  padding: 10px;
+  background-color: #2230d2;
+}
+
+textarea {
+  width: 300px;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 15px 16px;
+  font-size: 15px;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 24px;
+  margin: 5px 0;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: none;
+  margin-left: 9px;
+}
+
+input {
+  width: 300px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 0 16px;
+  font-size: 17px;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 20px;
+  margin: 8px 0;
+}
+
+.bottom-line {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 5px;
+}
