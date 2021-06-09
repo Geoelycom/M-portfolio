@@ -11,8 +11,6 @@ This project is been done to test my knowledge on Flexbox and semantic tags used
 - HTML,CSS,FLEXBOX,CSSGRID & JAVASCRIPT
 - Git & Github
 
-## Getting Started
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
