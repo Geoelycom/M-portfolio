@@ -846,3 +846,34 @@ input {
     left: 360px;
   }
 }
+
+@media (min-width: 992px) {
+  .logo {
+    animation-name: rotate-logo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotate-logo {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .nav-menu li a {
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+
+  .nav-menu li a:hover {
+    font-size: 17px;
+    color: #2230d2;
+  }
+
+  .grid-container section img {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .grid-container section img:hover {
+    transform: scale(0.9);
+  }
+}
