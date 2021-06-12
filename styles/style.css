@@ -859,4 +859,13 @@ input {
       transform: rotate(360deg);
     }
   }
+
+  .nav-menu li a {
+    transition: font-size .5s ease-in-out, color .5s ease-in-out;
+  }
+
+  .nav-menu li a:hover {
+    font-size: 17px;
+    color: #2230d2;
+  }
 }
