@@ -846,3 +846,17 @@ input {
     left: 360px;
   }
 }
+
+@media (min-width: 992px) {
+  .logo {
+    animation-name: rotate-logo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotate-logo {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
