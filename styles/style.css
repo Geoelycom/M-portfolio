@@ -868,4 +868,13 @@ input {
     font-size: 17px;
     color: #2230d2;
   }
+
+  .grid-container section img{
+    transition: transform .5s ease-in-out;
+  }
+
+  .grid-container section img:hover {
+    transform: scale(0.9);
+  }
+  
 }
