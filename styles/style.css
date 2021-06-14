@@ -393,7 +393,7 @@ input {
 
 /* ---HEADER-SECTION  desktop--- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .main-content {
     background-image: url("../Assets/images/rwdheader.png");
     width: 1440px;
