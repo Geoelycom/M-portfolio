@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Elyan Abu - Portfolio" />
 	<meta name="keywords" content="Full-stack developer" />
-	<meta name="author" content="Elyan Abu" /> 
+	<meta name="author" content="Elyan Abu" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elyan Abu - Portfolio</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-94B572W50S');
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,13 +32,15 @@
 				<a href="#">My Logo</a>
 			</div>
 			<section class="menu">
-				<nav><img src="Assets/images/Union.png" alt="Menu" class="hamburger">
+				<nav id="Main-menu"><img src="Assets/images/Union.png" alt="Menu" class="hamburger" id="hbg">
 					<!-- responsive web design for desktop screen head section-->
-					<ul class="nav-menu">
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+					<ul class="nav-menu" id="drop-down">
+						<li class="Xbtn"><img src="Assets/Icons/Icon.png" alt="close-button" class="btn-x"></li>
+						<li class="list-item"><a class="text-color" href="#">Portfolio</a></li>
+						<li class="list-item"><a class="text-color" href="#">About</a></li>
+						<li class="list-item"><a class="text-color" href="#">Contact</a></li>
 					</ul>
+					<!-- responsive web design for desktop screen head section  ends here-->
 				</nav>
 				<!-- section header ends here -->
 			</section>
@@ -50,7 +52,7 @@
 				my work and experience! If you like what you see and have a project you need coded, don’t hesitate
 				to contact me.
 			</p>
-			<section class="connect">
+			<section class="connect" id="bl2">
 				<h3 class="connect"><a href="#">LET'S CONNECT</a></h3>
 			</section>
 		</section>
@@ -309,6 +311,7 @@
 			</div>
 		</section>
 	</div>
+	<script src="jsfiles/index.js"></script>
 </body>
 
 </html>
