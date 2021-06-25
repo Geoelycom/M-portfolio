@@ -148,7 +148,7 @@ const submitFormBtn = document.querySelector('footer form button');
 const emailInput = document.querySelector('footer form input[type="email"]');
 const nameInput = document.querySelector('footer form input[type="text"]');
 const messageInput = document.querySelector('footer form textarea');
-const inputsArray = [emailInput, nameInput, messageInput];
+
 // Get user form data from the browser local storage
 window.addEventListener('load', () => {
   if (JSON.parse(localStorage.getItem('formInfo'))) {
@@ -164,7 +164,7 @@ submitFormBtn.addEventListener('click', (e) => {
     e.preventDefault();
     emailInput.parentElement.classList.add('invalidInput');
   } else {
-    // SAVE DATA TO LOCAL STORAGE ON SUBMIT
+    // save data in local storage
     saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
   }
 });
