@@ -143,6 +143,31 @@ portfolioPopUpClose.addEventListener('click', () => {
   projectPopUpWrap.style.display = 'none';
 });
 
+// Access form elements
+const submitFormBtn = document.querySelector('footer form button');
+const emailInput = document.querySelector('footer form input[type="email"]');
+const nameInput = document.querySelector('footer form input[type="text"]');
+const messageInput = document.querySelector('footer form textarea');
+const inputsArray = [emailInput, nameInput, messageInput];
+// Get user form data from the browser local storage
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('formInfo'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('formInfo'));
+    emailInput.value = email;
+    nameInput.value = name;
+    messageInput.value = message;
+  }
+});
+// Validate form
+submitFormBtn.addEventListener('click', (e) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    emailInput.parentElement.classList.add('invalidInput');
+  } else {
+    // SAVE DATA TO LOCAL STORAGE ON SUBMIT
+    saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+  }
+});
 
 
 
@@ -171,107 +196,4 @@ portfolioPopUpClose.addEventListener('click', () => {
 
 
 
-	// const projects = [
-	// 		{
-	// 				key: 0,
-	// 				Name: 'Tonic',
-	// 				Image: './images/tonicProject.png',
-	// 				companyName: 'CANOPY',
-	// 				projectPosition: 'Back And Dev',
-	// 				Date: 2015,
-	// 				Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-	// 				Technologies: ['html', 'css', 'JavaScript'],
-	// 				projectText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-	// 				liveLink: '#',
-	// 				sourceLink: '#',
-	// 		},
-	// 		{
-	// 				key: 1,
-	// 				Name: 'Multi-Post Stories',
-	// 				Image: './images/multiPostProject.png',
-	// 				companyName: 'CANOPY',
-	// 				projectPosition: 'Back And Dev',
-	// 				projectDate: 2015,
-	// 				Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-	// 				Technologies: ['html', 'css', 'JavaScript'],
-	// 				projectText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-	// 				liveLink: '#',
-	// 				sourceLink: '#',
-	// 		},
-	// 		{
-	// 				key: 2,
-	// 				Name: 'Tonic',
-	// 				Image: './images/tonicProject2.png',
-	// 				companyName: 'CANOPY',
-	// 				projectPosition: 'Back And Dev',
-	// 				projectDate: 2015,
-	// 				Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-	// 				Technologies: ['html', 'css', 'JavaScript'],
-	// 				projectText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-	// 				liveLink: '#',
-	// 				sourceLink: '#',
-	// 		},
-	// 		{
-	// 				key: 3,
-	// 				Name: 'Multi-Post Stories',
-	// 				Image: './images/multiPostProject2.png',
-	// 				companyName: 'CANOPY',
-	// 				projectPosition: 'Back And Dev',
-	// 				Date: 2015,
-	// 				Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-	// 				Technologies: ['html', 'css', 'JavaScript'],
-	// 				projectText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-	// 				liveLink: '#',
-	// 				sourceLink: '#',
-	// 		},
-	// ];
-
-
-
-// console.log(projects);
-
-// /Volumes/local storage/Microverse/M-portfolio/Assets/images/Portfolio1.png
-
-// M-portfolio/Assets/images/Portfolio1.png
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let messsage = [];
-// projectDetails = (e) => {
-// 	e.preventDefault
-// 	const popUpText = document.createElement('p');
-// }
-
-// const seeProject = document.querySelectorAll('.project');
-// for (let i = 0; i < seeProject.length; i++) {
-// 	seeProject[i].addEventListener('click', projectDetails);
-
-// }
-// const mobileProjects = document.querySelector('.project-works');
-// const desktopProjects = document.querySelector('.grid-container')
-
-// const projects = [mobileProjects, desktopProjects];
-// for (let i = 0; i < projects.length; i++){
-// 	console.log(projects[i]);
-// }
-
-
+	
