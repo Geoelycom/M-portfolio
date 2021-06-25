@@ -48,7 +48,7 @@ const implementProjects = () => {
     workInfoDetails.appendChild(companyName);
     // the Dot image
     const dotImg = document.createElement('img');
-    dotImg.src = './images/dot.png';
+    dotImg.src = './Assets/images/dot.png';
     dotImg.alt = '';
     workInfoDetails.appendChild(dotImg);
     // project details details 
@@ -58,7 +58,7 @@ const implementProjects = () => {
     workInfoDetails.appendChild(projectPosition);
     //Dotted image
     const secDotImg = document.createElement('img');
-    secDotImg.src = './images/dot.png';
+    secDotImg.src = './Assets/images/dot.png';
     secDotImg.alt = '';
     workInfoDetails.appendChild(secDotImg);
     // Project date
@@ -169,31 +169,44 @@ submitFormBtn.addEventListener('click', (e) => {
   }
 });
 
+const inputsArray = [emailInput, nameInput, messageInput];
+//Save user information from in the browser storage;
+function saveFormDataToLocalStorage(name, email, message) {
+	const formInfo = {
+			name: name.value,
+			email: email.value,
+			message: message.value,
+	};
+	localStorage.setItem('formInfo', JSON.stringify(formInfo));
+}
 
+// Recieve the informations saved in local storage;
+window.addEventListener('load', () => {
+	if (JSON.parse(localStorage.getItem('formInfo'))) {
+			const { name, email, message } = JSON.parse(localStorage.getItem('formInfo'));
+			emailInput.value = email;
+			nameInput.value = name;
+			messageInput.value = message;
+	}
+});
 
+// Save the user data to local storage when user change inputs 
+inputsArray.forEach((input) => input.addEventListener('input', (e) => {
+	if (input === nameInput) {
+			nameInput.value = input.value;
+	} else if (input === emailInput) {
+			emailInput.value = input.value;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+			// Validate the email input
+			if (e.target.value !== emailInput.value.toLowerCase()) {
+					e.preventDefault();
+					emailInput.parentElement.classList.add('invalidInput');
+			} else {
+					saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+					emailInput.parentElement.classList.remove('invalidInput');
+			}
+	} else {
+			messageInput.value = input.value;
+	}
+	saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+}));
