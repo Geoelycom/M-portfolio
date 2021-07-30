@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - For anyone who wants to practice JS AND DOM MANIPULATION and responsive design.
-- Any one looking for inspiration on to build their Portfolio
+- Any one looking for inspiration on how to build their Portfolio
 - How to manipulate and create dynamic pages using javascipt objects.
 
 
