@@ -14,6 +14,7 @@ window.addEventListener('resize', () => {
 	}
 });
 
+
 // Accessing projects from Data.js 
 const myProjects = data.projects;
 
@@ -32,6 +33,8 @@ const implementProjects = () => {
     workImg.alt = item.projectName;
     workImgWrap.appendChild(workImg);
     list.appendChild(workImgWrap);
+				
+				//wrapper for work-info
     const workInfoWrap = document.createElement('div');
     workInfoWrap.classList.add('work-info');
     // Create heading with createelement method
@@ -80,6 +83,7 @@ const implementProjects = () => {
       techItem.innerText = tech;
       projectTechnologies.appendChild(techItem);
     });
+
     workInfoWrap.appendChild(projectTechnologies);
     // See project button
     const seeMoreBtn = document.createElement('button');
@@ -170,6 +174,10 @@ submitFormBtn.addEventListener('click', (e) => {
 });
 
 const inputsArray = [emailInput, nameInput, messageInput];
+
+
+
+
 //Save user information from in the browser storage;
 function saveFormDataToLocalStorage(name, email, message) {
 	const formInfo = {
@@ -179,6 +187,10 @@ function saveFormDataToLocalStorage(name, email, message) {
 	};
 	localStorage.setItem('formInfo', JSON.stringify(formInfo));
 }
+
+
+
+
 
 // Recieve the informations saved in local storage;
 window.addEventListener('load', () => {
