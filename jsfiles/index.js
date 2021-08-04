@@ -14,6 +14,25 @@ window.addEventListener('resize', () => {
 	}
 });
 
+//sticky navigation function with scroll effect
+	let lastKnownScrollPosition = 0;
+let ticking = false;
+
+document.addEventListener("scroll", function () {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking && lastKnownScrollPosition > 50) {
+    //addclass
+				document.querySelector("#sticky").classList.add("sticky");
+    ticking = true;
+  }
+
+  if (ticking && lastKnownScrollPosition < 50) {
+    //removeclass
+				document.querySelector("#sticky").classList.remove("sticky");
+    ticking = false;
+  }
+});
 
 // Accessing projects from Data.js 
 const myProjects = data.projects;
@@ -175,9 +194,6 @@ submitFormBtn.addEventListener('click', (e) => {
 
 const inputsArray = [emailInput, nameInput, messageInput];
 
-
-
-
 //Save user information from in the browser storage;
 function saveFormDataToLocalStorage(name, email, message) {
 	const formInfo = {
@@ -187,10 +203,6 @@ function saveFormDataToLocalStorage(name, email, message) {
 	};
 	localStorage.setItem('formInfo', JSON.stringify(formInfo));
 }
-
-
-
-
 
 // Recieve the informations saved in local storage;
 window.addEventListener('load', () => {
