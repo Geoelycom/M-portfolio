@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Elyan Abu - Portfolio</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="styles/icons/favicon.ico">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -26,31 +27,32 @@
 </head>
 
 <body>
-	<!-- header section of portfolio page -->
-	<header>
-		<nav>
-			<div class="logo">
-				<a href="#">Elyan Abu</a>
-			</div>
-			<ul>
-				<li class="close-menu">
-					<button type="button"><img src="Assets/images/Union.png" alt="Menu"></button>
-				</li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<button type="button" class="menu-btn">
-				<img src="Assets/images/Union.png" alt="hamburger-btn" />
-			</button>
-		</nav>
-	</header>
-	<!-- header section of portfolio page Ends here -->
-
 	<!-- Beginning section of main page  starts here(Witty Introduction text)-->
-
 	<main class="wrap">
 		<section class="banner">
+			<div id="particles-js"></div>
+
+<!-- header section of portfolio page Starts here -->
+<header id="sticky">
+	<nav>
+		<div class="logo">
+			<a href="#">Elyan Abu</a>
+		</div>
+		<ul>
+			<li class="close-menu">
+				<button type="button"><img src="Assets/images/Union.png" alt="Menu"></button>
+			</li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<button type="button" class="menu-btn">
+			<img src="Assets/images/Union.png" alt="hamburger-btn" />
+		</button>
+	</nav>
+</header>
+<!-- header Section section ends here-->
+
 			<div class="banner-text">
 				<h1>I’m Elyan<br>Glad to see you!</h1>
 				<p>
@@ -59,28 +61,33 @@
 					what you see and have a project you need coded, don’t hestiate to
 					contact me.
 				</p>
-			</div>
-			<div class="social-connect">
-				<h3>LET’S CONNECT</h3>
-				<ul class="social-links">
-					<li><a href="https://twitter.com/Ely_codes"><img src="Assets/Icons/Vector.png" alt="twitter-icon"></a></li>
-					<li><a href="https://www.linkedin.com/in/ekenimoh-elyan-52b616109"><img src="Assets/Icons/Linkedin_icon.png" alt="Linkedin"></a></li>
-					<li><a href="#"><img src="Assets/Icons/Vector(2).png" alt="Medium"></a></li>
-					<li><a href="https://github.com/Geoelycom"><img src="Assets/Icons/Vector(1).png" alt="GitHub"></a></li>
-					<li><a href="#"><img src="Assets/Icons/Vector(3).png" alt="AngelList"></a></li>
-				</ul>
+				<div class="social-connect">
+					<h3>LET’S CONNECT</h3>
+					<ul class="social-links">
+						<li><a href="https://twitter.com/Ely_codes"><img src="Assets/Icons/Vector.png"
+									alt="twitter-icon"></a></li>
+						<li><a href="https://www.linkedin.com/in/ekenimoh-elyan-52b616109"><img
+									src="Assets/Icons/Linkedin_icon.png" alt="Linkedin"></a></li>
+						<li><a href="#"><img src="Assets/Icons/Vector(2).png" alt="Medium"></a></li>
+						<li><a href="https://github.com/Geoelycom"><img src="Assets/Icons/Vector(1).png" alt="GitHub"></a>
+						</li>
+						<li><a href="#"><img src="Assets/Icons/Vector(3).png" alt="AngelList"></a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
+
 		<!-- Beginning section of main page ends here here-->
 
-		<!-- work and project section of my portfolio -->
-		<section class="works">
-			<ul class="work-items">
+<!-- work and project section of my portfolio -->
+<section class="works">
+	<ul class="work-items">
 
-			</ul>
-		</section>
-		<!-- work and project section of my portfolio Ends here-->
+	</ul>
+</section>
+<!-- work and project section of my portfolio Ends here-->
 
+		
 		<!-- About section of my Portfolio page -->
 		<section class="about">
 			<div class="about-info">
@@ -139,8 +146,10 @@
 		</section>
 		<!-- About section of my Portfolio page Ends here-->
 
+
+
 		<!-- contact me Section starts here -->
-		 <footer class="contact-section">
+		<footer class="contact-section">
 			<form action="https://formspree.io/f/myyljgwb" method="POST">
 				<h2>Contact Me</h2>
 				<p>
@@ -161,7 +170,7 @@
 				</div>
 				<button type="submit">Get In Touch</button>
 			</form>
-		</footer> 
+		</footer>
 		<!-- contact me Section Ends here -->
 
 		<!-- pop up window section starts here -->
@@ -203,6 +212,8 @@
 		</div>
 	</main>
 	<!-- pop up window section Ends here -->
+	<script src="jsfiles/particles.js"></script>
+	<script src="jsfiles/particles.app.js"></script>
 	<script type="module" src="jsfiles/index.js"></script>
 </body>
 
