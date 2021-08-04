@@ -250,6 +250,7 @@ header nav .menu-btn:hover {
   gap: 20px;
   list-style: none;
   animation: fadeIn 1.1s linear;
+  margin-left: -40px;
 }
 
 .banner .social-connect .social-links a {
