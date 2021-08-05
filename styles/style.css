@@ -120,6 +120,23 @@ header nav ul .close-menu {
   justify-content: flex-end;
 }
 
+.work-logo ul li {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.vertical-line {
+  display: flex;
+  justify-content: center;
+  border-left: 3px solid #212529;
+  height: 60px;
+  margin-left: 12px;
+  position: absolute;
+  left: 50%;
+}
+
 .contact-section form button {
   text-decoration: none;
   font-weight: 500;
