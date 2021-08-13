@@ -3,7 +3,6 @@ import data from './data.js';
 //Mobile section 
 const menuBtn = document.querySelector('.menu-btn');
 const menuOpen = document.querySelector('header nav ul');
-const menuClose = document.querySelector('.close-menu button');
 const menuItems = [...document.querySelectorAll('header nav ul li a')];
 const navList = document.querySelector('#nav-list');
 const sticky = document.querySelector('#sticky');
@@ -12,7 +11,7 @@ menuBtn.addEventListener('click', () => {
 	navList.classList.toggle('b-flex')
 	sticky.classList.toggle('nav-color')
 });
-//menuClose.addEventListener('click', () => menuOpen.classList.remove('mobileMenu'));
+
 menuItems.forEach((item) => item.addEventListener('click', () => menuOpen.classList.remove('mobileMenu')));
 window.addEventListener('resize', () => {
 	if (window.innerWidth > 767.98) {
@@ -125,6 +124,48 @@ const implementProjects = () => {
 
 implementProjects();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Implementing pop up for project
 const portfolioPopUpClose = document.querySelector('.portfolio-window-body .close-portfolio-window-btn button');
 const projectPopUpWrap = document.querySelector('.portfolio-window-wrap');
@@ -172,6 +213,36 @@ portfolioPopUpClose.addEventListener('click', () => {
 	projectPopUpBody.style.display = 'none';
 	projectPopUpWrap.style.display = 'none';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Access form elements
 const submitFormBtn = document.querySelector('footer form button');
