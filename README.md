@@ -52,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 [Live Demo Link](https://geoelycom.github.io/M-portfolio/)
 
-![img](./Assets/images/Elyan Abu - Portfolio.png)
+![img](./Assets/images/Portfolio.png)
 
 ## 🤝 Contributing
 
